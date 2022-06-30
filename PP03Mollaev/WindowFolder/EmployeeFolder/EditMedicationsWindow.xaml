@@ -1,0 +1,192 @@
+﻿<Window x:Class="PP03Mollaev.WindowFolder.EmployeeFolder.EditMedicationsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PP03Mollaev.WindowFolder.EmployeeFolder"
+        mc:Ignorable="d"
+        Height="1000" Width="1200"
+        MaxHeight="1000" MaxWidth="1200"
+        MinHeight="1000" MinWidth="1200"
+        WindowStartupLocation="CenterScreen"
+        Icon="/PP03Mollaev;component/ResourceFolder/ImageFolder/icon.png"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="1" Grid.Row="1" x:Name="imageico">
+            <Image.Source>
+                <FormatConvertedBitmap Source="/PP03Mollaev;component/ResourceFolder/ImageFolder/lecarstva.png"/>
+            </Image.Source>
+
+        </Image>
+        <Label Content="Редактирование лекарства"
+               Style="{DynamicResource LabelLogoStyle}"
+      Grid.Column="2"
+Grid.Row="1"
+               Grid.ColumnSpan="5"/>
+        <Label Content="Название"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="3" Margin="0,10,0,10" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Name"
+Grid.Column="2"
+Grid.Row="5"/>
+        <Label Content="Тип"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="5" Margin="0,10,0,10" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Type"
+Grid.Column="2"
+Grid.Row="3"/>
+        <Label Content="Состав"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="7" Margin="0,10,0,10" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Composition"
+Grid.Column="2"
+Grid.Row="7"/>
+        <Label Content="Форма выпуска"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="9" Margin="0,10,0,10" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Formofrelease"
+Grid.Column="2"
+Grid.Row="11"/>
+        <Label Content="Упаковка"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="11" Margin="0,10,0,10" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Packaging"
+Grid.Column="2"
+Grid.Row="9"/>
+        <Label Content="Характеристика"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="13" Margin="0,10,0,10" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="characteristic"
+Grid.Column="2"
+Grid.Row="13"/>
+        <Label Content="Показания к "
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="3" Margin="400,0,26,20" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Indicationsforuse"
+Grid.Column="4"
+Grid.Row="3" Margin="10"/>
+        <Label Content=" применению"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="3" Margin="400,21,26,10" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Label Content="Противопоказания "
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="5" Margin="0,0,0,20" Grid.Column="3"/>
+        <TextBox x:Name="ContraindicationsToUse"
+Grid.Column="4"
+Grid.Row="5"/>
+        <Label Content="к применению"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="5" Margin="400,20,26,0" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <Label Content="Способ применения"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="7" Margin="0,2,0,18" Grid.Column="3"/>
+        <TextBox x:Name="HowToUse"
+Grid.Column="4"
+Grid.Row="7"/>
+        <Label Content="Дозировка"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="9" Margin="0,2,0,18" Grid.Column="3"/>
+        <TextBox x:Name="Dosage"
+Grid.Column="4"
+Grid.Row="9"/>
+        <Label Content="Условия отпуска"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="11" Margin="0,2,0,18" Grid.Column="3"/>
+        <TextBox x:Name="TermsOfDispensing"
+Grid.Column="4"
+Grid.Row="11"/>
+        <Label Content="Производитель"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="13" Margin="421,10,5,10" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="manufacturer"
+Grid.Column="4"
+Grid.Row="13"/>
+        <Label Content="Адрес"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="14" Margin="-40,10,50,21" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="ManufacturersAddress"
+Grid.Column="2"
+Grid.Row="15"/>
+        <Label Content="производителя"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="15" Margin="0,20,10,0" Grid.ColumnSpan="2"/>
+        <Label Content="Свидетельство на"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="14" Margin="421,10,5,21" Grid.Column="2" RenderTransformOrigin="0.478,0.931" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="TrademarkCertificate"
+Grid.Column="4"
+Grid.Row="15"/>
+        <Label Content="товарный знак"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="15" Margin="416,20,10,0" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <Label Content="Серия"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="17" Margin="0,2,0,18" Grid.Column="1"/>
+        <TextBox x:Name="Series"
+Grid.Column="2"
+Grid.Row="17"/>
+        <Label Content="Срок годности"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="17" Margin="0,2,0,18" Grid.Column="3"/>
+        <TextBox x:Name="ShelfLife"
+Grid.Column="4"
+Grid.Row="17"/>
+        <Label Content="Дата производства"
+Style="{DynamicResource LabelNormalStyle}"
+Grid.Row="19" Margin="0,2,0,18" Grid.Column="1"/>
+        <TextBox x:Name="DateOfProduction"
+Grid.Column="2"
+Grid.Row="19"/>
+        <Button x:Name="EditDescriptionBtn"
+       Content="Сохранить лекарство"
+       Grid.Column="3"
+Grid.Row="19"
+Grid.ColumnSpan="3"
+Click="AddDescriptionBtn_Click"/>
+        <Button x:Name="ExitBtn"
+Content="Выход"
+Grid.Column="3"
+Grid.Row="21"
+Click="ExitBtn_Click" Grid.ColumnSpan="2" Margin="10,10,10,10"/>
+        <Button x:Name="BackBtn"
+Content="Назад"
+Grid.Column="1"
+Grid.Row="21"
+Click="BackBtn_Click" Margin="10,10,10,10" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
